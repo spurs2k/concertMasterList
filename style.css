@@ -1,0 +1,54 @@
+body {
+    background: rgb(2, 56, 116);
+    background: linear-gradient(0deg, rgba(2, 56, 116, 1) 0%, rgba(0, 121, 255, 1) 53%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Rubik-Bubbles';
+
+    min-height: 100vh;
+
+}
+
+.heading {
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+}
+
+.intro {
+    padding-top: 10px;
+}
+
+.buttonContainer {
+    padding-top: 10px;
+}
+
+/* Default style for the disabled button */
+.btn-default:disabled {
+    background-color: #dddddd;
+    /* Set the background color for the disabled state */
+    border: 1px solid #dddddd;
+    /* Set the border color for the disabled state */
+    color: #666666;
+    /* Set the text color for the disabled state */
+}
+
+/* Style for the enabled button */
+.custom-btn:not(:disabled) {
+    background-color: #00bcd4;
+    /* Set the background color for the enabled state (cyan color) */
+    border: 1px solid white;
+    /* Set the border color for the enabled state */
+    color: #ffffff;
+    /* Set the text color for the enabled state */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Override Bootstrap's default styles for the button */
+.custom-btn.btn-default:hover,
+.custom-btn.btn-default:active,
+.custom-btn.btn-default:focus {
+    background-color: #00bcd4;
+    border: 1px solid white;
+    color: #ffffff;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
